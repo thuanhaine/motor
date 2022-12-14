@@ -1,0 +1,99 @@
+.header {
+    height: 70px;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0 32px;
+    border-bottom: 2px solid white;
+    .header__left {
+        flex: 1;
+
+        .header__left-logo {
+            height: 60px;
+        }
+    }
+    .header__mid {
+        flex: 1;
+        .header__mid-list {
+            display: flex;
+            list-style: none;
+      
+                .header__mid-list__item {
+
+                    font-size: 22px;
+                    display: block;
+                    margin: 0 12px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: white;
+                    border-bottom: 2px solid black;
+
+                    .header__mid-list__item-link{
+                        text-decoration: none;
+                        color: white;
+
+                    }
+    
+                }
+                .header__mid-list__item:hover {
+                    color: white;
+                    border-bottom: 2px solid white;
+    
+                    font-weight: 600;
+                    cursor: pointer;
+            
+            }
+            
+        }
+    }
+    .header__right {
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        .fa-search{
+            margin: 0 16px;
+            font-size: 22px;
+            color: white;
+            border-radius: 50%;
+            padding: 4px;
+            
+        }
+        .fa-search:hover {
+            color: black;
+            background-color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .header__right-btn {
+            font-size: 16px;
+            margin: 18px;
+            border: 1px solid;
+            border-radius: 16px;
+            padding: 6px;
+            color: white;
+
+            text-decoration: none;
+            position: relative;
+            .fa-shopping-bag {
+                margin-left: 8px;
+            }
+        }
+        .header__right-btn:hover {
+            color: black;
+            background-color: white;
+            cursor: pointer;
+        }
+        .header__right-btn::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: #CCC;
+            top:0;
+            left: -20px;
+        }
+    }
+}
